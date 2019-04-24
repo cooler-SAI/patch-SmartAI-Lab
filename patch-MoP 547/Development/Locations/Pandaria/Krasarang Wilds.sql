@@ -898,8 +898,6 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,5000,8000,12000,15000,11,18546,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Overdrive'),
 (@ENTRY,0,1,0,0,0,100,0,10000,10000,20000,20000,11,135862,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ignite Fuel');
 
-UPDATE `creature_template` SET `faction_A` = 85, `faction_H` = 85 WHERE `entry` = 67285;
-
 -- Jungle Skitterer
 SET @ENTRY := 58067;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
