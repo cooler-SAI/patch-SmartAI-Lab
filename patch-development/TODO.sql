@@ -18,11 +18,7 @@ Legion Dungeons:
 
 Legion Raids:
 
--- Antorus, the Burning Throne	
-
 -- The Nighthold	
-
--- The Emerald Nightmare	
 
 http://www.wowhead.com/level-100-110-zones#zones:0+1+2+4
 
