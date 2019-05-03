@@ -1,0 +1,4 @@
+ALTER TABLE `smart_scripts` ADD COLUMN `event_param5` INT(10) UNSIGNED DEFAULT 0 NOT NULL AFTER `event_param4`;
+
+
+https://github.com/TrinityCore/TrinityCore/commit/91409cc77e5076e43046dc9749308afcf52f04db
