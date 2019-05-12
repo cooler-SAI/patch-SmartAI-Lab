@@ -2,8 +2,6 @@ SmartAI Scripts TODO:
 
 Legion Zones:
 
--- Stormheim	
-
 -- Val'sharah	
 
 -- Azsuna	
