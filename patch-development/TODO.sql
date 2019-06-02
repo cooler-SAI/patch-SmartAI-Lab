@@ -4,8 +4,6 @@ Legion Zones:
 
 -- Val'sharah	
 
--- Azsuna	
-
 -- Broken Shore	
 
 -- Suramar
