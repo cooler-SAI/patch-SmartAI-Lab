@@ -1,10 +1,12 @@
 SmartAI Scripts TODO:
 
-\\ -- 8.1.x patch \\
-
 BfA Zones:
 
 -- Drustvar	
+
+-- Mechagon
+
+-- Nazjatar
 
 -- Nazmir	
 
@@ -12,43 +14,14 @@ BfA Zones:
 
 -- Tiragarde Sound	
 
--- Tol Dagor	
-
 -- Vol'dun	
 
 -- Zuldazar
 
-BfA Dungeons:
-
--- Atal'Dazar	
-
--- Siege of Boralus	
-
--- Tol Dagor	
-
--- Freehold	
-
--- Kings' Rest	
-
--- Temple of Sethraliss	
-
--- Shrine of the Storm	
-
--- The Underrot	
-
--- Waycrest Manor
-
 BfA Raids:
 
--- Crucible of Storms	
+-- Battle of Dazar'alor
 
--- Battle of Dazar'alor	
-
--- Uldir
-
+-- The Eternal Palace		
 
 https://www.wowhead.com/level-110-120-zones#zones:0+1+2+4
-
-
-
-
