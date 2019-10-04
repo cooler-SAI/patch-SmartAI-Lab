@@ -12,8 +12,6 @@ BfA Zones:
 
 -- Stormsong Valley	
 
--- Tiragarde Sound	
-
 -- Vol'dun	
 
 -- Zuldazar
