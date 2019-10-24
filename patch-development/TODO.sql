@@ -4,8 +4,6 @@ BfA Zones:
 
 -- Drustvar	
 
--- Mechagon
-
 -- Nazjatar
 
 -- Nazmir	
