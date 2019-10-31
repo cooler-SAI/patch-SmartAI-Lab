@@ -2,8 +2,6 @@ SmartAI Scripts TODO:
 
 BfA Zones:
 
--- Drustvar	
-
 -- Nazjatar
 
 -- Nazmir	
