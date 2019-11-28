@@ -6,8 +6,6 @@ BfA Zones:
 
 -- Nazmir	
 
--- Stormsong Valley	
-
 -- Vol'dun	
 
 -- Zuldazar
