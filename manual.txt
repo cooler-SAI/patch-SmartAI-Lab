@@ -263,6 +263,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,11,0,7,1,100,1,0,0,0,0,11,34038,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sandworm Submerge Visual on Evade'),
 (@ENTRY,0,12,0,7,1,100,1,0,0,0,0,18,33554434,0,0,0,0,0,1,0,0,0,0,0,0,0,'Change Flag on Evade');
 
+
+
+
 -- Gargoly Stone Form
 SET @ENTRY := xxxxx;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
