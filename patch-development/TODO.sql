@@ -10,9 +10,15 @@ BfA Zones:
 
 -- Zuldazar
 
+BfA Dungeons:
+
+-- Operation: Mechagon
+
 BfA Raids:
 
 -- Battle of Dazar'alor
+
+-- Ny'alotha, the Waking City
 
 -- The Eternal Palace		
 
