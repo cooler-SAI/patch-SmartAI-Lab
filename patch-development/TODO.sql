@@ -6,8 +6,6 @@ BfA Zones:
 
 -- Nazmir	
 
--- Vol'dun	
-
 -- Zuldazar
 
 BfA Dungeons:
