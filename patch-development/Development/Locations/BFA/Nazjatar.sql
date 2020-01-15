@@ -2083,7 +2083,7 @@ DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,244844,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Bolt'),
 (@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,300524,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Song of Azshara at 40% HP'),
-(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,300557,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Rejuvenating Waters at 40% HP'),
+(@ENTRY,0,2,0,2,0,100,0,0,55,17000,20000,11,300557,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Rejuvenating Waters at 40% HP'),
 (@ENTRY,0,3,0,2,0,100,1,0,55,0,0,11,300440,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Reactive Bubble at 55% HP'),
 (@ENTRY,0,4,0,0,0,100,0,3000,5000,12000,15000,11,189865,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Aquabomb');
 
@@ -2205,11 +2205,399 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,2,0,100,1,0,30,0,0,11,303604,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hasten the End at 30% HP'),
 (@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,303593,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shadow-Wreathed Blade on Spawn');
 
+-- Shirakess Subjugator
+SET @ENTRY := 153738;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,0,0,11,303604,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hasten the End at 30% HP'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,303593,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shadow-Wreathed Blade on Spawn');
+
+-- Shirakess Subjugator
+SET @ENTRY := 154126;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,0,0,11,303604,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hasten the End at 30% HP'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,303593,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shadow-Wreathed Blade on Spawn');
+
+-- Shirakess Voidreaver
+SET @ENTRY := 152827;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,0,0,11,303604,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hasten the End at 30% HP'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,303593,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shadow-Wreathed Blade on Spawn');
+
+-- Shirakess Voidtwister
+SET @ENTRY := 153843;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,303504,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Void Bolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,303523,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Dark Vesicle'),
+(@ENTRY,0,2,0,0,0,100,0,10000,10000,25000,35000,11,303519,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Collapsing Shadows');
+
+-- Shiz'narasz the Consumer
+SET @ENTRY := 153658;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,302768,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charged Bite'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,302798,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Conductive Spittle'),
+(@ENTRY,0,2,0,0,0,100,0,10000,10000,20000,22000,11,302722,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Storm'),
+(@ENTRY,0,3,0,9,0,100,0,0,8,15000,25000,11,302852,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Biolectric Digestion on Close');
+
+-- Siltridge Hydra
+SET @ENTRY := 145340;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304453,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hydra Maw');
+
+-- Siltridge Marauder
+SET @ENTRY := 152541;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304453,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hydra Maw');
+
+-- Siltstalker the Packmother
+SET @ENTRY := 152359;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,0,0,40,22000,25000,11,147650,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Defensive Leap at 40% HP'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,297151,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Packmother\'s Call on Aggro'),
+(@ENTRY,0,2,0,0,0,100,0,0,0,3000,3500,11,296182,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Poison Spit'),
+(@ENTRY,0,3,0,0,0,100,0,3000,5000,12000,15000,11,296276,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Venomous Bite'),
+(@ENTRY,0,4,0,2,0,100,1,0,30,0,0,11,297131,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Vengeful Frenzy at 30% HP');
+
+-- Skittering Eel
+SET @ENTRY := 150462;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304793,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Voltaic Bite'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,15000,19000,11,304746,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Electrify');
+
+-- Skittering Eel
+SET @ENTRY := 150463;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304793,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Voltaic Bite'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,15000,19000,11,304746,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Electrify');
+
+-- Slitherblade Azanz
+SET @ENTRY := 153311;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,120436,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mortal Strike'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,300524,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Song of Azshara at 40% HP');
+
+-- Snapdragon Devourer
+SET @ENTRY := 154754;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296276,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Venomous Bite'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,15000,22000,11,296254,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapdragon Toxin'),
+(@ENTRY,0,2,0,4,0,100,1,0,0,0,0,11,296452,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ravenous Pursuit on Aggro');
+
+-- Snapdragon Hatchling
+SET @ENTRY := 154757;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296060,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rip Flesh');
+
+-- Snapdragon Hunter
+SET @ENTRY := 152357;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296254,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapdragon Toxin');
+
+-- Snapdragon Matriarch
+SET @ENTRY := 154422;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,147650,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Defensive Leap'),
+(@ENTRY,0,1,0,2,0,100,1,0,40,0,0,11,297151,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Packmother\'s Call at 40% HP');
+
+-- Snapdragon Ravager
+SET @ENTRY := 152362;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296254,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapdragon Toxin');
+
+-- Snapdragon Stalker
+SET @ENTRY := 154753;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,147650,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Defensive Leap'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,15000,18000,11,296254,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapdragon Toxin'),
+(@ENTRY,0,2,0,0,0,100,0,0,0,2000,2000,11,296182,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Poison Spit');
+
+-- Snapdragon Terrormaw
+SET @ENTRY := 152358;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296254,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapdragon Toxin');
+
+-- Snapdragon Vicejaw
+SET @ENTRY := 154752;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296276,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Venomous Bite'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,296452,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ravenous Pursuit on Aggro'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,297016,2,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Packfather\'s Cry at 40% HP'),
+(@ENTRY,0,3,0,0,0,100,0,3000,5000,12000,15000,11,296525,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hungering Claws');
+
+-- Snapling
+SET @ENTRY := 145339;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296060,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rip Flesh');
+
+-- Snapshell Hatchling
+SET @ENTRY := 152384;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,250208,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapping Bite');
+
+-- Snapshell Tortoise
+SET @ENTRY := 152383;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,250208,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Snapping Bite'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,265445,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shell Shield at 40% HP');
+
+-- Soundless
+SET @ENTRY := 152290;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,297447,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sucking Teeth'),
+(@ENTRY,0,1,0,6,0,100,1,0,0,0,0,11,297244,3,0,0,0,0,0,1,0,0,0,0,0,0,'Cast Residual Gas on Death'),
+(@ENTRY,0,2,0,0,0,100,0,3000,5000,12000,15000,11,304349,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Pacifying Screech'),
+(@ENTRY,0,3,0,4,0,100,1,0,0,0,0,11,297230,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Gaseous Discharge on Aggro');
+
+-- Spawn of Salgos
+SET @ENTRY := 150863;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,301890,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Empowered Earthbolt'),
+(@ENTRY,0,1,0,2,0,100,1,0,40,0,0,11,304927,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Echoes of Mardivas at 40% HP'),
+(@ENTRY,0,2,0,0,0,100,0,3000,5000,12000,15000,11,301737,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Icestorm'),
+(@ENTRY,0,3,0,0,0,100,0,10000,10000,16000,20000,11,301521,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sandstorm');
+
+-- Spawn of Wekemara
+SET @ENTRY := 155702;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,302768,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charged Bite'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,302798,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Conductive Spittle');
+
+-- Spirit of Gral
+SET @ENTRY := 152662;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,216263,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood in the Water');
+
+-- Staghorn Reefwalker
+SET @ENTRY := 152563;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,299807,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Angry Stomp'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,299584,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Coral Growth at 40% HP'),
+(@ENTRY,0,2,0,0,0,100,0,10000,10000,20000,22000,11,299811,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sedimentary Breath');
+
+-- Stonemaw Devourer
+SET @ENTRY := 152546;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304392,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Flame Bath');
+
+-- Stonemaw Hydra
+SET @ENTRY := 152547;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304453,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hydra Maw');
+
+-- Sunbleached Reefwalker
+SET @ENTRY := 152562;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,299807,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Angry Stomp'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,299584,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Coral Growth at 40% HP'),
+(@ENTRY,0,2,0,0,0,100,0,10000,10000,20000,22000,11,299811,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sedimentary Breath');
+
+-- Telur
+SET @ENTRY := 151909;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,294708,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Fetching Conch');
+
+-- Theurgist Nitara <Battlemaiden of Azsh'ari>
+SET @ENTRY := 155836;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,303299,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Bolt'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,20000,20000,11,303302,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ocean\'s Fury'),
+(@ENTRY,0,2,0,1,0,100,1,3000,5000,0,0,11,303310,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Water Elemental on Spawn'),
+(@ENTRY,0,3,0,16,0,100,0,303322,40,22000,25000,11,303322,2,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Elemental Empowerment on Friendlies Missing Buff');
+
+-- Thundering Vortex
+SET @ENTRY := 152686;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,269914,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wind Burst'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,300420,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Lightning'),
+(@ENTRY,0,2,0,2,0,100,1,0,40,0,0,11,298347,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enchanted Waters at 40% HP');
+
+-- Tidal Cracklemaw
+SET @ENTRY := 154132;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,302768,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charged Bite'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,302798,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Conductive Spittle'),
+(@ENTRY,0,2,0,0,0,100,0,10000,10000,20000,22000,11,302722,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Storm'),
+(@ENTRY,0,3,0,9,0,100,0,0,8,15000,25000,11,302852,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Biolectric Digestion on Close');
+
+-- Tidal Guardian
+SET @ENTRY := 153655;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,302768,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charged Bite');
+
+-- Tide Surger
+SET @ENTRY := 152672;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,300082,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Surge'),
+(@ENTRY,0,1,0,2,0,100,1,0,40,0,0,11,298347,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enchanted Waters at 40% HP'),
+
+-- Tidebinder Sarjezi
+SET @ENTRY := 151662;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,303299,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Bolt'),
+(@ENTRY,0,1,0,9,0,100,0,0,20,15000,25000,11,305011,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Tidal Burst on Close'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,303301,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ocean\'s Embrace at 40% HP');
+
+-- Tidelord Aquatus
+SET @ENTRY := 153898;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,270606,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frostbolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,270705,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Frozen Wave'),
+(@ENTRY,0,2,0,2,0,100,1,0,40,0,0,11,298347,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enchanted Waters at 40% HP');
+
+-- Tidelord Dispersius
+SET @ENTRY := 153928;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,270606,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frostbolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,270705,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Frozen Wave'),
+(@ENTRY,0,2,0,2,0,100,1,0,40,0,0,11,298347,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enchanted Waters at 40% HP');
+
+-- Tidemistress Ethendriss
+SET @ENTRY := 153934;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,303299,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Bolt'),
+(@ENTRY,0,1,0,9,0,100,0,0,20,15000,25000,11,305011,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Tidal Burst on Close'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,305010,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Queen\'s Blessing at 40% HP');
+
+-- Tidemistress Leth'sindra
+SET @ENTRY := 154148;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,303504,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Void Bolt'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,303523,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Dark Vesicle at 40% HP'),
+(@ENTRY,0,2,0,0,0,100,0,3000,5000,12000,15000,11,303299,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Bolt');
+
+-- Tidespring Servant
+SET @ENTRY := 155918;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,271287,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Spout'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,15000,22000,11,274080,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Surging Depths');
+
+-- Tidespring Surger
+SET @ENTRY := 153998;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,271287,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Spout'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,15000,22000,11,274080,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Surging Depths'),
+(@ENTRY,0,2,0,2,0,100,1,0,40,0,0,11,298347,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enchanted Waters at 40% HP');
+
+-- Tortured Soul
+SET @ENTRY := 152492;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,304931,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Final Breaths');
+
+-- Toxigore the Alpha
+SET @ENTRY := 152360;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,296276,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Venomous Bite'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,296452,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ravenous Pursuit on Aggro'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,297016,2,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Packfather\'s Cry at 40% HP'),
+(@ENTRY,0,3,0,0,0,100,0,3000,5000,12000,15000,11,296525,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hungering Claws');
+
+-- Undana Frostbarb
+SET @ENTRY := 153304;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,244844,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Water Bolt'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,300524,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Song of Azshara at 40% HP'),
+(@ENTRY,0,2,0,2,0,100,0,0,55,17000,20000,11,300557,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Rejuvenating Waters at 40% HP'),
+(@ENTRY,0,3,0,2,0,100,1,0,55,0,0,11,300440,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Reactive Bubble at 55% HP'),
+(@ENTRY,0,4,0,0,0,100,0,3000,5000,12000,15000,11,189865,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Aquabomb');
+
+
+
+
+
 
 
 https://www.wowhead.com/zone=10052/nazjatar#npcs:600+1
-
-
 
 
 
