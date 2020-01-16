@@ -327,21 +327,441 @@ DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262907,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arc Blade');
 
+-- Blaspheming Horror
+SET @ENTRY := 153225;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,303135,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Thundering Stomp'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,263085,2,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Terrifying Roar at 40% HP'),
+(@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,275570,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Ravage at 30% HP');
+
+-- Blessed Shorestalker
+SET @ENTRY := 148514;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,2500,3000,11,279722,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Glaive Throw');
+
+-- Blood Bonepicker
+SET @ENTRY := 122636;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,2000,2000,11,256108,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Spearhead Shot'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,255931,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wild Slash');
+
+-- Blood Crawg
+SET @ENTRY := 127060;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256715,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Jagged Maw');
+
+-- Blood Crawg
+SET @ENTRY := 128005;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256715,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Jagged Maw');
+
+-- Blood Cursemother
+SET @ENTRY := 120609;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,255366,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hex of Weakness'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,257231,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Bolt');
+
+-- Blood Hunter
+SET @ENTRY := 123071;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,265754,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Desperate Strike');
+
+-- Blood Marquess
+SET @ENTRY := 140601;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt');
+
+-- Blood Marquis
+SET @ENTRY := 140600;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt');
+
+-- Blood Marquis
+SET @ENTRY := 140602;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt');
+
+-- Blood Priest Xak'lar
+SET @ENTRY := 126635;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,254994,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rupture'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,257975,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Spatter at 40% HP');
+
+-- Blood Priestess Zu'Anji
+SET @ENTRY := 126890;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,254994,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rupture'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,257975,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Spatter at 40% HP');
+
+-- Blood Prince Dreven
+SET @ENTRY := 140603;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,15000,15000,11,257320,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Corrupt Blood'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt');
+
+-- Blood Troll Berserker
+SET @ENTRY := 136293;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262308,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hack and Slash'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,277223,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Filthy Blades on Spawn');
+
+-- Blood Troll Berserker
+SET @ENTRY := 139797;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262308,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hack and Slash'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,277223,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Filthy Blades on Spawn');
+
+-- Blood Troll Brutalizer
+SET @ENTRY := 120607;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256607,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Savage Strike');
+
+-- Blood Troll Cleaver
+SET @ENTRY := 134869;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262308,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hack and Slash'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,277223,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Filthy Blades on Spawn');
+
+-- Blood Troll Corruptor
+SET @ENTRY := 136296;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood');
+
+-- Blood Troll Hexxer
+SET @ENTRY := 120606;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,255366,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hex of Weakness');
+
+-- Blood Troll Raider
+SET @ENTRY := 135395;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256607,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Savage Strike'),
+(@ENTRY,0,1,0,2,0,100,1,0,30,0,0,11,254901,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Frenzy at 30% HP');
+
+-- Blood Troll Slave
+SET @ENTRY := 128033;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262308,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hack and Slash'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,277223,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Filthy Blades on Spawn');
+
+-- Blood Troll Stalker
+SET @ENTRY := 134868;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,255366,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hex of Weakness');
+
+-- Blood Troll Warmother
+SET @ENTRY := 120613;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,0,0,11,164257,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enrage at 30% HP'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,175184,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Ground Stomp'),
+(@ENTRY,0,2,0,2,0,100,0,0,55,22000,25000,11,176079,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Will Breaker at 55% HP');
+
+-- Blood Troll Warrior
+SET @ENTRY := 127770;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262308,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hack and Slash'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,277223,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Filthy Blades on Spawn');
+
+-- Blood Weaver
+SET @ENTRY := 127779;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,254994,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rupture'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt');
+
+-- Blood Witch Najima
+SET @ENTRY := 122204;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,15000,17000,11,254994,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rupture'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,257975,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Spatter at 40% HP');
+
+-- Blood Witch Pakkala
+SET @ENTRY := 136565;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,258003,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sanguine Pool at 40% HP');
+
+-- Blood Witch Vashera
+SET @ENTRY := 126888;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,258003,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sanguine Pool at 40% HP');
+
+-- Blood Witch Yialu
+SET @ENTRY := 126891;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,256099,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Bolt'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,255220,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Siphon Blood'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,258003,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sanguine Pool at 40% HP');
+
+-- Blood-Infused Lasher
+SET @ENTRY := 131168;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,1,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,1,0,4,1,100,1,0,0,0,0,11,48195,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Emerald Lasher Emerge on Aggro'),
+(@ENTRY,0,2,0,4,1,100,1,0,0,0,0,91,9,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Ground Emote on Aggro'),
+(@ENTRY,0,3,0,0,1,100,0,4000,7000,9000,13000,11,263080,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Lasher Toxin'),
+(@ENTRY,0,4,0,7,1,100,1,0,0,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 on Evade'),
+(@ENTRY,0,5,0,7,2,100,1,0,0,0,0,91,9,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Ground Emote on Evade'),
+(@ENTRY,0,6,0,21,2,100,1,0,0,0,0,90,9,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Ground Emote on Reached Home');
+
+-- Bloodbound Dreadtick
+SET @ENTRY := 122242;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,263889,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frenzied Thrash');
+
+-- Bloodfire Battle-Slave
+SET @ENTRY := 132315;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256607,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Savage Strike');
+
+-- Bloodfire Hexxer
+SET @ENTRY := 132316;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,255366,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hex of Weakness'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,257231,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Bolt');
+
+-- Bloodfire Necromancer
+SET @ENTRY := 132678;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,257231,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Bolt'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,269832,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shadowburst Skeleton at 40% HP');
+
+-- Bloodfire Venomspitter
+SET @ENTRY := 132710;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,2000,2000,11,248988,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blow Dart'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,256108,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Spearhead Shot');
+
+-- Bloodfused Crusher
+SET @ENTRY := 148273;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,2,0,100,1,0,30,0,0,11,177032,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Self-Destruct at 30% HP'),
+(@ENTRY,0,1,0,61,0,100,0,0,0,0,0,41,500,0,0,0,0,0,1,0,0,0,0,0,0,0,'Despawn Link');
+
+-- Bloodhunter Cursecarver
+SET @ENTRY := 122240;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,257231,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Bolt'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,269832,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Shadowburst Skeleton at 40% HP'),
+(@ENTRY,0,2,0,9,0,100,0,0,7,15000,25000,11,269846,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Meat Grinder on Close');
+
+-- Bloodhunter Drudge
+SET @ENTRY := 124547;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256034,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Swamp Fever');
+
+-- Bloodhunter Stalker
+SET @ENTRY := 122239;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,2000,2000,11,256108,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Spearhead Shot'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,255931,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wild Slash'),
+(@ENTRY,0,2,0,9,0,100,0,0,7,15000,25000,11,269846,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Meat Grinder on Close');
+
+-- Bloodhunter War Slave
+SET @ENTRY := 123440;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256607,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Savage Strike'),
+(@ENTRY,0,1,0,2,0,100,1,0,30,0,0,11,254901,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Frenzy at 30% HP');
+
+-- Bloodhunter War-Witch
+SET @ENTRY := 123439;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,255366,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hex of Weakness'),
+(@ENTRY,0,1,0,0,0,100,0,0,0,3000,3500,11,257231,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Bolt');
+
+-- Bloodhunter Warmother
+SET @ENTRY := 123441;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,255144,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Severing Strikes'),
+(@ENTRY,0,1,0,11,0,100,1,0,0,0,0,11,263224,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Mark of the Blood God on Spawn');
+
+-- Bloodhunter Warrior
+SET @ENTRY := 126089;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256607,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Savage Strike'),
+(@ENTRY,0,1,0,2,0,100,1,0,30,0,0,11,254901,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Frenzy at 30% HP'),
+(@ENTRY,0,2,0,4,0,100,1,0,0,0,0,11,255946,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charge on Aggro');
+
+-- Bloodraging Crawg
+SET @ENTRY := 138812;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,1,0,0,0,0,11,274339,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sprint on Aggro'),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,15000,11,273038,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Belch');
+
+-- Bloodscreecher Broodling
+SET @ENTRY := 127265;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256475,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Leeching Bite'),
+(@ENTRY,0,1,0,2,0,100,0,0,40,22000,25000,11,256625,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Screech at 40% HP');
+
+-- Bloodscreecher Wanderer
+SET @ENTRY := 126433;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256475,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Leeching Bite');
+
+-- Bloodswarmer
+SET @ENTRY := 138727;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,262589,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Leeching Bite');
+
+-- Bloodthirsty Headhunter
+SET @ENTRY := 149666;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,2500,3000,11,61168,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Throw');
+
+-- Bone Raptor
+SET @ENTRY := 130735;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,260365,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Talon Lunge'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,260366,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Talon Lunge on Aggro'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,272369,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Killer Instinct at 40% HP');
+
+-- Bound Horror
+SET @ENTRY := 126662;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,256644,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blade Rush'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,255946,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charge on Aggro');
+
+-- Brewmaster Lin
+SET @ENTRY := 148744;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,270219,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Double Jab'),
+(@ENTRY,0,1,0,0,0,100,0,10000,10000,20000,22000,11,162759,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Spinning Crane Kick');
+
+-- Captain Beamwind <The Stormy Pearl>
+SET @ENTRY := 148116;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,3000,3500,11,79913,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Chain Lightning'),
+(@ENTRY,0,1,0,1,0,100,0,500,1000,600000,600000,11,19514,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Shield on Spawn'),
+(@ENTRY,0,2,0,16,0,100,0,19514,1,15000,30000,11,19514,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Shield on Repeat');
+
+-- Captain Mu'kala <The Cursed>
+SET @ENTRY := 125232;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,257345,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Dauntless Strike'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,255946,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charge on Aggro'),
+(@ENTRY,0,2,0,2,0,100,0,0,40,22000,25000,11,257328,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Soulguard at 40% HP');
 
 
 
 
-https://www.wowhead.com/zone=8500/nazmir#npcs:100+1
 
-
-
-
-
-
-
-
-
-
+https://www.wowhead.com/zone=8500/nazmir#npcs:200+1
 
 
 
