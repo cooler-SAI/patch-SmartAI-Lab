@@ -2,8 +2,6 @@ SmartAI Scripts TODO:
 
 BfA Zones:
 
--- Nazmir	
-
 -- Zuldazar
 
 BfA Raids:
