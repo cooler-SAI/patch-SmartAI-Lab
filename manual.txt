@@ -330,7 +330,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,62,0,100,0,menu_id,0,0,0,56,ITEM_ID,1,0,0,0,0,0,0,0,0,0,0,0,0,"Orgus - On Gossip - Add Item");
 
 
--- Mob SAI Quest ITEM Give NEW !!!!ivent time
+-- Mob SAI Quest ITEM Give NEW !!!!
 SET @Entry := 34754;
 UPDATE creature_template SET AIName="SmartAI" WHERE entry=@Entry;
 DELETE FROM smart_scripts WHERE entryorguid=@Entry AND source_type=0;
@@ -443,7 +443,7 @@ UPDATE `quest_template` SET `Method` = 0, `SpecialFlags` = 6, `RequiredNpcOrGo1`
 
 UPDATE `creature_template` SET `flags_extra`=0 WHERE `entry`=xxxxx; 
 UPDATE `creature_template_addon` SET `auras`='' WHERE `entry`=xxxxx; 
-UPDATE `creature` SET `phaseMask`=0 WHERE `id`=xxxxx; 
+UPDATE `creature` SET `phaseId`=0 WHERE `id`=xxxxx; 
 UPDATE `creature_addon` SET `auras`='' WHERE `guid` IN (SELECT `guid` FROM `creature` WHERE `id`=xxxxx);
 
 
@@ -626,4 +626,8 @@ GOSSIP_ICON_TALK = 7, //white chat bubble with black dots
 GOSSIP_ICON_TABARD = 8, //tabard 
 GOSSIP_ICON_BATTLE = 9, //two swords 
 GOSSIP_ICON_DOT = 10, //yellow dot
+
+
+Костёр
+gobject 210935
 
