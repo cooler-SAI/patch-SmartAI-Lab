@@ -32,8 +32,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,2,0,100,3,0,15,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP');
 -- NPC talk text insert
 SET @ENTRY := 8567;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s is getting hungry!',16,0,100,0,0,0, 'combat Frenzy'),
 (@ENTRY,1,0, '%s is getting VERY hungry!',16,0,100,0,0,0, 'combat Frenzy');
 
@@ -211,8 +211,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,0,0,100,2,3000,4000,17000,19000,11,11442,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Withered Touch');
 -- NPC talk text insert
 SET @ENTRY := 7329;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Withered Reaver
@@ -225,8 +225,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,3,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 7328;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Withered Spearhide
@@ -240,8 +240,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,2,0,100,3,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 7332;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Withered Warrior
@@ -254,7 +254,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,3,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 7327;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 

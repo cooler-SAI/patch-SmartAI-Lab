@@ -51,8 +51,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,0,0,100,4,6000,7500,11000,17000,11,59605,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Piercing Jab');
 -- NPC talk text insert
 SET @ENTRY := 24071;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Dragonflayer Ironhelm
@@ -76,8 +76,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,9,0,100,4,0,5,5000,9000,11,59608,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sunder Armor on Close');
 -- NPC talk text insert
 SET @ENTRY := 24078;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Dragonflayer Overseer
@@ -109,8 +109,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,7,0,60,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 60% HP');
 -- NPC talk text insert
 SET @ENTRY := 29735;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Tunneling Ghoul
@@ -154,8 +154,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,0,0,100,4,6000,7500,11000,17000,11,59605,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Piercing Jab');
 -- NPC talk text insert
 SET @ENTRY := 24849;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Dragonflayer Spiritualist
@@ -170,8 +170,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,0,0,100,6,1500,4000,8000,10000,11,51588,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Flame Shock');
 -- NPC talk text insert
 SET @ENTRY := 28410;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Dragonflayer Weaponsmith
@@ -208,8 +208,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,0,0,100,6,7500,9000,13000,15000,11,42972,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Blind');
 -- NPC talk text insert
 SET @ENTRY := 23956;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Proto-Drake Handler
@@ -227,6 +227,6 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,16,0,100,4,43664,100,15000,21000,11,59694,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Rage on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 24082;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');

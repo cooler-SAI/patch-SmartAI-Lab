@@ -108,8 +108,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,0,0,100,6,2000,4500,10000,13000,11,15496,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Cleave');
 -- NPC talk text insert
 SET @ENTRY := 42696;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes raged!',16,0,100,0,0,0, 'combat Rage');
 
 

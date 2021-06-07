@@ -40,8 +40,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,8,0,61,0,100,3,0,0,0,0,32,5720,0,0,0,0,0,1,0,0,0,0,0,0,0,'Summon on Death');
 -- NPC talk text insert
 SET @ENTRY := 5710;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'The shield be down! Rise up Atal\'ai! Rise up!',14,0,100,0,0,5861, 'combat Say'),
 (@ENTRY,1,0, 'The Soulflayer comes!',14,0,100,0,0,5862, 'combat Say'),
 (@ENTRY,2,0, 'Join us!',14,0,100,0,0,5864, 'combat Say');
@@ -66,8 +66,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,0,0,100,2,17000,20000,18000,22000,11,11876,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast War Stomp');
 -- NPC talk text insert
 SET @ENTRY := 5709;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'This evil cannot be allowed to enter this world!  Come my children!',14,0,100,0,0,0, 'combat Say');
 
 -- Ogom the Wretched
@@ -138,8 +138,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,14,0,100,3,1000,30,0,0,11,11642,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 5269;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Atal'ai High Priest
@@ -156,8 +156,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,2,0,100,3,0,40,0,0,11,8362,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Renew at 40% HP');
 -- NPC talk text insert
 SET @ENTRY := 5273;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Corrupted Guardian

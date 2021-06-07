@@ -37,8 +37,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,9,0,6,0,100,7,0,0,0,0,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 17976;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Step forward! I will see that you are properly welcomed.',14,0,100,0,0,11071, 'on Aggro Text'),
 (@ENTRY,1,0, 'You are no longer dealing with some underling.',14,0,100,0,0,11076, 'on Cast Text'),
 (@ENTRY,2,0, 'Band\'or shorel\'aran!',14,0,100,0,0,11077, 'on Cast Text'),
@@ -67,8 +67,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,12,0,6,0,100,7,0,0,0,0,1,7,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 17978;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'What aggravation is this? You will die!',14,0,100,0,0,11205, 'on Aggro Text'),
 (@ENTRY,1,0, 'Scream while you burn!',14,0,50,0,0,11211, 'on Cast Text'),
 (@ENTRY,1,1, 'I\'ll incinerate you!',14,0,50,0,0,11210, 'on Cast Text'),

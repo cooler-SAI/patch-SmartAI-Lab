@@ -32,8 +32,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,6,0,100,7,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 3887;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Leave this accursed place at once!',14,0,100,0,0,0, 'on Aggro Text'),
 (@ENTRY,1,0, 'This death is only a temporary respite from my curse.',14,0,100,0,0,0, 'on Death Text');
 
@@ -54,8 +54,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,9,0,6,0,100,7,0,0,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 4278;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Intruders in the keep!To arms!',14,0,100,0,0,0, 'on Aggro Text'),
 (@ENTRY,1,0, 'Repel the intruders!',14,0,100,0,0,0, 'on Battle Text'),
 (@ENTRY,2,0, 'Our vigilance is eternal...',14,0,100,0,0,0, 'on Death Text');
@@ -93,8 +93,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,17,0,6,0,100,7,0,0,0,0,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 46962;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Tally ho! the hunt begins!',14,0,100,0,0,0, 'on Aggro Text'),
 (@ENTRY,1,0, 'This is just too easy...',14,0,100,0,0,0, 'on Cast Text'),
 (@ENTRY,2,0, 'Baron Ashbury begins to cast Stay of Execution!',41,0,100,0,0,0, 'on Cast Text'),
@@ -118,8 +118,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,8,0,6,0,100,7,0,0,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 46964;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'That bitch Sylvanas sent you too,did she?No matter,your journey ends in agony.',14,0,100,0,0,0, 'on Aggro Text'),
 (@ENTRY,1,0, 'Lord Godfrey begins to cast Pistol Barrage!',41,0,100,0,0,0, 'on Cast Text'),
 (@ENTRY,2,0, 'I thank you for the clearn death.I would not of done the same... ',14,0,100,0,0,0, 'on Death Text');
@@ -139,8 +139,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,6,0,100,7,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 46963;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Even here I find myself beset by fools!',14,0,100,0,0,0, 'on Aggro Text'),
 (@ENTRY,1,0, 'My new life was just beginning...',14,0,100,0,0,0, 'on Death Text');
 

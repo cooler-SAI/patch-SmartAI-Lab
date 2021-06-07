@@ -54,8 +54,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,15,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 48496;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'You don\'t have to yell, Hobart, I\'m standing right here. Sheesh!',12,0,100,6,0,0, 'say Text'),
 (@ENTRY,1,0, 'There. One Micro Mechachicken. I\'ll never understand how you come up with these names.',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,2,0, 'Greely sighs and rolls her eyes.',16,0,100,0,0,0, 'say Text'),
@@ -93,8 +93,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,25,0,100,0,0,0,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset Event OOC');
 -- NPC talk text insert
 SET @ENTRY := 34835;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'I was just comin\' to see you, Honest!',12,0,100,0,0,0, 'say Text on Aggro'),
 (@ENTRY,1,0, 'Dam, you got me!',12,0,100,0,0,0, 'say Text on Beat');
 
@@ -108,8 +108,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,1,0,100,0,10000,20000,40000,50000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 35304;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Trolls disent certain truck,chef!',12,0,50,5,0,0, 'say Text'),
 (@ENTRY,0,1, 'Songs Trolls not make the Goblin nice work!',12,0,50,5,0,0, 'say Text'),
 (@ENTRY,0,2, 'You you tape us the songs Trolls!',12,0,50,5,0,0, 'say Text'),
@@ -127,8 +127,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,61,0,100,0,0,0,0,0,1,2,0,0,0,0,0,7,0,0,0,0,0,0,0,'Say Text on Awesome Party Ensemble');
 -- NPC talk text insert
 SET @ENTRY := 35053;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Make sure you pull plenty of moolah out of the bank. I don\'t want you buying any of that cheap clothing you usually like to wear. This party\'s important!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'You\'re the most handsome boyfriend a girl could hope for. Knock\'em dead, honey!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,2,0, 'You are dresed Impress! Use your new powers below to make your party guests happy!',41,0,100,0,0,0, 'say Text');
@@ -144,8 +144,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,19,0,100,0,14153,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Quest Add');
 -- NPC talk text insert
 SET @ENTRY := 35054;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Think to take a large flouze package at the Bank. I do not want you too look at these poor clothes you like to wear usual. This day is important!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'You are really very chic! Use your new powers to eyeful to guests to!',42,0,100,1,0,0, 'say Text');
 
@@ -159,8 +159,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,61,0,100,0,0,0,0,0,28,68480,0,0,0,0,0,7,0,0,0,0,0,0,0,'Remove Aura on Quest End');
 -- NPC talk text insert
 SET @ENTRY := 37602;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Still an unfortunate accident of fire-fireworks-lit flammable-gas - Lectriquea?',14,0,100,0,0,0, 'say Text');
 
 -- Coach Crosscheck <The Bilgewater Buccaneers>
@@ -174,8 +174,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 37106;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'You gotta hurry,kid. We gotta get you into the game. But first, we gotta get the parts for that shredder!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'Get into that shredder and win the game. The Bilgewater Cartel\'s counting on you!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,2,0, 'You got the juice,kid. That\'s for sure! Too bad that dragon had to come and ruin everything. No matter. You made us proud. Now get back to headquarters.',12,0,100,1,0,0, 'say Text');
@@ -200,8 +200,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 35120;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'You people cool your heels! $N is here. He\'s gonna be the next Trade Prince!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'Next!',12,0,100,1,0,0, 'say Text');
 
@@ -215,8 +215,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,19,0,100,0,14008,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Quest Add');
 -- NPC talk text insert
 SET @ENTRY := 34689;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'All what you have to do is let me show you how was a Visca cooperation. Then, head to one of the models to lead training on which Bamm is going to pull, start a pernicious attack and finish it with a Visca cooperation.',12,0,100,1,0,0, 'say Text');
 
 -- Foreman Dampwick
@@ -234,8 +234,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 34872;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'It is always pleasant to receive a gift from the hand of the second in person. I\'m going to the baller immediately!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'OUCH!',14,0,100,34,0,0, 'say Text'),
 (@ENTRY,2,0, 'Okay, okay! I understand the message!',12,0,100,1,0,0, 'say Text'),
@@ -260,8 +260,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,8,0,0,0,100,0,2000,3000,7000,9000,11,75775,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Throw Gears');
 -- NPC talk text insert
 SET @ENTRY := 34876;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Oh no, you didn\'t!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'What? Fine,fine... I\'ll pay my protection moolah to your goons!',12,0,100,1,0,0, 'say Text');
 
@@ -346,8 +346,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,22,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 48494;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Prepare the Micro Mechachicken!',14,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'There\'s a great deal that you do not understand, my dear Greely. That is why you are the assistant and I... I am Hobart Grapplehammer!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,2,0, 'Excellent. Now back away from the Ultra Concave Fissionable Testing Platform. Slowly, if you please.',12,0,100,1,0,0, 'say Text'),
@@ -402,8 +402,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,9,0,1,0,100,1,500,1000,0,0,11,76136,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Acidic Sweat on Spawn');
 -- NPC talk text insert
 SET @ENTRY := 34877;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '< Jack reported something about the hammer, which would be its armead you think. >',12,0,100,0,0,0, 'say Text on Aggro'),
 (@ENTRY,1,0, 'Jack the Hammer grunts and give up, clearly beaten.',16,0,100,0,0,0, 'say Text on Beat');
 
@@ -415,8 +415,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,1,0,100,0,30000,120000,30000,120000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 37804;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Kaja\'Cola! Poissard the Weasel advise you to drink, or else ... !',14,0,50,0,0,0, 'say Text'),
 (@ENTRY,0,1, '\"Lift it challenge the Goa\" to drink Kaja\'Cola!',14,0,50,0,0,0, 'say Text'),
 (@ENTRY,0,2, 'Drink Kaja\'Cola!',14,0,50,0,0,0, 'say Text'),
@@ -472,8 +472,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,11,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 37804;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'This party lacks a bit of brilliant',12,0,100,10,0,0, 'say Text'),
 (@ENTRY,1,0, 'Thanks !',12,0,100,17,0,0, 'say Text'),
 (@ENTRY,2,0, 'Passport delicious! And these are just the out-of A \"work?',12,0,100,7,0,0, 'say Text'),
@@ -535,8 +535,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,1,0,100,0,10000,60000,300000,450000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 34695;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Would one of you hurry up and finish off the other? Some of us are trying to make some moolah here!',12,0,100,1,0,0, 'say Text');
 
 -- Megs Dreadshredder <Marketing Rep>
@@ -552,8 +552,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 34874;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Ooh, I think you\'re gonna like this,boss!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'Use the Keys to the Hod Rod to get into your car. Pick up your friends,Izzy,Ace,and Gobber.',41,0,100,1,0,0, 'say Text'),
 (@ENTRY,2,0, 'Here they are! Okay, you three make sure that you help him out today. He\'s got a lot of stuff to take care of before the party!',12,0,100,1,0,0, 'say Text'),
@@ -584,8 +584,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,1,0,4,0,20,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 35200;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'We be here courtesy o\' the trade prince.',12,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,1, 'Let\'s have a dance!',12,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,2, 'Who be in chargehere?',12,0,50,0,0,0, 'on Aggro Text');
@@ -598,8 +598,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,80,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 35294;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'I not gonna take it anymore,mon!',12,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,1, 'Kezan for da trolls!',12,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,2, 'Ya got some nerve,mon!',12,0,50,0,0,0, 'on Aggro Text'),
@@ -636,8 +636,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,16,0,19,0,100,0,14126,0,0,0,1,7,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Quest Add');
 -- NPC talk text insert
 SET @ENTRY := 34668;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Haha! that should be a blast!',12,0,100,25,0,0, 'say Text'),
 (@ENTRY,1,0, 'He\'ll get me more later? How are we supposed to get you promoted to Trade Prince without our number one product on the shelves?',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,2,0, 'Ace,Izzy,Gobber,you three make sure you tag a long with $N and help him take care of those dead beats!',12,0,100,1,0,0, 'say Text'),
@@ -657,8 +657,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 34692;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'It\'s not much, but it just might keep your green skin intact.',12,0,50,1,0,0, 'say Text'),
 (@ENTRY,0,1, 'Just wanted to let you know that we\'re all counting on you!',12,0,50,1,0,0, 'say Text'),
 (@ENTRY,0,2, 'Light be with you... for the very low price of a one silver tithe!',12,0,50,1,0,0, 'say Text');
@@ -676,8 +676,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,19,0,100,0,14010,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Quest Add'),
 (@ENTRY,0,6,0,20,0,100,0,14010,0,0,0,5,4,0,0,0,0,0,1,0,0,0,0,0,0,0,'Play Emote on Quest End');
 SET @ENTRY := 34693;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'I\'ll address the CAP so that it activates automatically when you\'re at the villa. Do just well warning avoid pigs!',12,0,100,1,0,0, 'say Text'),
 (@ENTRY,1,0, 'All what you have to do is let me show you how was a Visca cooperation. Then, head to one of the models to lead training on which Bamm is going to pull, start a pernicious attack and finish it with a Visca cooperation.',12,0,100,1,0,0, 'say Text');
 
@@ -697,8 +697,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,8,0,0,0,100,0,9800,11000,17600,25400,11,75761,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Bubble Blast');
 -- NPC talk text insert
 SET @ENTRY := 34878;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'I\'m tryin\' to run a business here!',12,0,100,0,0,0, 'say Text on Aggro'),
 (@ENTRY,1,0, 'Not the face, not the face!',12,0,100,1,0,0, 'say Text on Beat');
 
@@ -756,8 +756,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,1,0,64,0,100,0,0,0,0,0,10,1,3,5,6,0,0,1,0,0,0,0,0,0,0,'Play Emote on Gossip');
 -- NPC talk text insert
 SET @ENTRY := 37500;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Volcano rocks - new low price! You\'re gonna love my rocks.',14,0,50,1,0,0, 'say Text'),
 (@ENTRY,0,1, 'Volcano rocks for sale! Hot off the mountain! You want \'em, I got \'em!',14,0,50,1,0,0, 'say Text'),
 (@ENTRY,0,2, 'Take home a piece of the Cataclysm! Volcano rocks for sale - hot, Hot, HOT!',14,0,50,1,0,0, 'say Text'),
@@ -774,6 +774,6 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,19,0,100,0,14013,0,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Quest Add');
 -- NPC talk text insert
 SET @ENTRY := 34697;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Insert your coins inside the Warrior NX-01, who\'s learn you. Then use the technique on one of the models to lead training.',12,0,100,0,0,0, 'say Text');

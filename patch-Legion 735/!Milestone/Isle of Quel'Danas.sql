@@ -53,8 +53,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,0,0,100,0,10000,10000,17000,22000,11,3589,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cast Deafening Screech');
 -- NPC talk text insert
 SET @ENTRY := 25073;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Dawnblade Blood Knight
@@ -104,8 +104,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,0,0,100,0,3300,11600,17000,21700,11,11962,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Immolate');
 -- NPC talk text insert
 SET @ENTRY := 24978;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 -- Imp
 SET @ENTRY := 12922;
@@ -141,8 +141,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,2,0,40,1,0,50,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Text and Emote at 50% HP');
 -- NPC talk text insert
 SET @ENTRY := 24972;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Core overload detected. System malfunction detected...',12,2,100,0,0,0, 'combat Text');
 
 -- Ghoul Invader
@@ -214,8 +214,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,0,0,100,0,5000,7700,12000,14700,11,11971,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sunder Armor');
 -- NPC talk text insert
 SET @ENTRY := 24966;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,1,0, 'Mine! You shall not take this place!',12,33,100,0,0,0, 'combat Text'),
 (@ENTRY,2,0, 'Get away, this place is ours!',12,33,100,0,0,0, 'combat Text'),
 (@ENTRY,3,0, 'The rift\'s power is ours!',12,33,100,0,0,0, 'combat Text');
@@ -232,8 +232,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,0,0,100,0,5500,7600,12000,16200,11,35334,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Nether Shock');
 -- NPC talk text insert
 SET @ENTRY := 24960;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,1,0, 'Mine! You shall not take this place!',12,33,100,0,0,0, 'combat Text'),
 (@ENTRY,2,0, 'Get away, this place is ours!',12,33,100,0,0,0, 'combat Text'),
 (@ENTRY,3,0, 'The rift\'s power is ours!',12,33,100,0,0,0, 'combat Text');

@@ -37,8 +37,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,9,0,6,0,100,7,0,0,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 19218;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'I predict a painful death.',14,0,100,0,0,11101, 'on Aggro Text'),
 (@ENTRY,1,0, 'Measure twice, cut once.',14,0,50,0,0,11104, 'on Cast Text'),
 (@ENTRY,1,1, 'If my division is correct you should be quite dead.',14,0,50,0,0,11105, 'on Cast Text'),
@@ -63,8 +63,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,9,0,6,0,100,7,0,0,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Death');
 -- NPC talk text insert
 SET @ENTRY := 19219;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'You should split while you can.',14,0,100,0,0,11162, 'on Aggro Text'),
 (@ENTRY,1,0, 'Go ahead, gimme your best shot. I can take it!',14,0,50,0,0,11166, 'on Spell Cast Text'),
 (@ENTRY,1,1, 'Think you can hurt me, huh? Think I\'m afraid of you?!',14,0,50,0,0,11165, 'on Spell Cast Text'),

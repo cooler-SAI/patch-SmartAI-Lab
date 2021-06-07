@@ -29,8 +29,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,1,0,100,0,500,1000,600000,600000,11,34809,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Holy Fury on Spawn');
 -- NPC talk text insert
 SET @ENTRY := 29007;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
  
 -- Death Knight
@@ -81,8 +81,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,1,0,100,0,100000,100000,900000,900000,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 28474;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'You have stood and listened long enough. Step forth.',12,0,100,1,0,0, 'Text 1'),
 (@ENTRY,1,0, 'You are not overwhelmed just yet disciple... let the hungering cold of death halt this onslaught.',12,0,100,1,0,0, 'Text 2'),
 (@ENTRY,2,0, 'Frozen solid, ripe for the slaughter. Let loose a howling blast and shatter them into pieces, disciple.',12,0,100,1,0,0, 'Text 3'),
@@ -123,8 +123,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,17,0,6,2,100,1,0,0,0,0,33,28764,0,0,0,0,0,7,0,0,0,0,0,0,0,'Quest Credit on Death');
 -- NPC talk text insert
 SET @ENTRY := 28577;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Why?',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'P... Please don\'t...',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Spare my life! I will leave this place forever!Please!',12,0,50,0,0,0, 'combat Say'),
@@ -170,8 +170,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,17,0,6,2,100,1,0,0,0,0,33,28764,0,0,0,0,0,7,0,0,0,0,0,0,0,'Quest Credit on Death');
 -- NPC talk text insert
 SET @ENTRY := 28576;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Why?',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'P... Please don\'t...',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Spare my life! I will leave this place forever!Please!',12,0,50,0,0,0, 'combat Say'),
@@ -229,8 +229,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,28,0,6,4,100,1,0,0,0,0,33,28764,0,0,0,0,0,7,0,0,0,0,0,0,0,'Quest Credit on Death');
 -- NPC talk text insert
 SET @ENTRY := 28941;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Why?',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,1, 'Somebody save me!',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Spare my life! I will leave this place forever!Please!',12,0,50,22,0,0, 'combat Say'),
@@ -282,8 +282,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,28,0,6,4,100,1,0,0,0,0,33,28764,0,0,0,0,0,7,0,0,0,0,0,0,0,'Quest Credit on Death');
 -- NPC talk text insert
 SET @ENTRY := 28942;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Why?',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,1, 'Somebody save me!',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Spare my life! I will leave this place forever!Please!',12,0,50,22,0,0, 'combat Say'),
@@ -389,8 +389,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,1,0,61,0,100,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 27033;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Is Gothik the Harvester going to have to choke a geist?',12,0,100,0,0,0, 'Text 1');
 
 -- Hearthglen Crusader
@@ -409,8 +409,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,100,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Say on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 28945;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'The Crusade will be victorious!',12,0,100,0,0,0, 'combat Say');
 
 -- Citizen of New Avalon
@@ -450,8 +450,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,29,0,1,0,100,0,1000,5000,5000,15000,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 28559;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Why?',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,1, 'Somebody save me!',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Spare my life! I will leave this place forever!Please!',12,0,50,22,0,0, 'combat Say'),
@@ -519,8 +519,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,29,0,1,0,100,0,1000,5000,5000,15000,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 28560;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Why?',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,1, 'Somebody save me!',12,0,50,22,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Spare my life! I will leave this place forever!Please!',12,0,50,22,0,0, 'combat Say'),
@@ -603,8 +603,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,2,0,100,1,0,30,0,0,11,38210,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Renew at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 29001;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Your dark Scourge magic won\'t protect you from the Light!',12,0,100,0,0,0, 'combat Say'),
 (@ENTRY,1,0, 'Come out and play!',12,0,100,0,0,0, 'combat Say'),
 (@ENTRY,2,0, 'Coward!',12,0,100,0,0,0, 'combat Say'),
@@ -624,8 +624,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,1,0,100,0,120000,120000,920000,920000,1,6,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 29193;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'The horror! THE HORROR!',12,0,100,0,0,0, 'Text 1'),
 (@ENTRY,1,0, 'Wi... Will it hurt?',12,0,100,0,0,0, 'Text 2'),
 (@ENTRY,2,0, 'It tingles...',12,0,100,0,0,0, 'Text 3'),
@@ -647,8 +647,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,1,0,100,0,122000,122000,922000,922000,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text OOC');
 -- NPC talk text insert
 SET @ENTRY := 29112;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Oh yes. Immensely. The pain will propably render you unconcious - hence the vat of slime you\'re floating in!',12,0,100,1,0,0, 'Text 1'),
 (@ENTRY,1,0, 'That\'s how you know it\'s working.',12,0,100,1,0,0, 'Text 2'),
 (@ENTRY,2,0, 'Don\'t be ridiculous. Where would you even go if I did spare you? We just finished eradicating your civilization, remember?',12,0,100,1,0,0, 'Text 3'),
@@ -711,8 +711,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,4,0,100,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 28610;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'You\'re not welcome in these lands.monster!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'By the Light be cleansed!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'Let the purging begin!',12,0,50,0,0,0, 'combat Say');
@@ -745,8 +745,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,1,0,100,0,500,1000,600000,600000,11,34809,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Holy Fury on Spawn');
 -- NPC talk text insert
 SET @ENTRY := 28939;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Scarlet Commander
@@ -758,8 +758,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,1,0,4,0,100,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Say on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 28936;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Scourge lilth!DIE!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'I will present your head to Abbendis myself!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'The Crusade will be victorious!',12,0,50,0,0,0, 'combat Say');
@@ -873,8 +873,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,13,0,7,2,100,1,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset Phase on Evade'),
 (@ENTRY,0,14,0,6,2,100,1,0,0,0,0,33,28763,0,0,0,0,0,7,0,0,0,0,0,0,0,'Kill Credit for Quest 12678');
 SET @ENTRY := 28557;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Ungh! I ... I think I pooped...',0,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'Please, dont kill me! I only took this job for the benefits!',0,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'I... I have a sick grandmother at home... I...I\'m all she\'s got.',0,0,50,0,0,0, 'combat Say'),

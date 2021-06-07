@@ -264,8 +264,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,0,0,100,6,13000,15000,45000,55000,11,19134,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Frightening Shout');
 -- NPC talk text insert
 SET @ENTRY := 26798;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'What is this? Mag thorin Kar! Kill them!',14,0,100,0,0,13458, 'combat Say'),
 (@ENTRY,1,0, 'Our task is not yet done!',14,0,100,0,0,13459, 'combat Say'),
 (@ENTRY,2,0, 'GOOO!',14,0,100,0,0,13460, 'combat Say');
@@ -285,8 +285,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,0,0,100,6,13000,15000,45000,55000,11,19134,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Frightening Shout');
 -- NPC talk text insert
 SET @ENTRY := 26796;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'What? Where in a..? Don\'t just stand around lads KILL SOMEBODY!',14,0,100,0,0,13193, 'combat Say'),
 (@ENTRY,1,0, 'Now we\re getting someplace!',14,0,100,0,0,13195, 'combat Say'),
 (@ENTRY,2,0, 'Is that all you\'ve... got?',14,0,100,0,0,13194, 'combat Say');

@@ -31,8 +31,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,0,0,100,2,17200,33500,17800,38500,11,11085,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Chain Bolt');
 -- NPC talk text insert
 SET @ENTRY := 6235;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Electric justice!',14,0,100,0,0,5811, 'combat Say');
 
 -- Mekgineer Thermaplugg
@@ -53,8 +53,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,10,0,0,0,100,2,2000,15000,8000,29000,11,52778,1,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Welding Beam');
 -- NPC talk text insert
 SET @ENTRY := 7800;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'USURPERS!!! GNOMEREGAN IS MINE!!!',14,0,100,0,0,5807, 'combat Say'),
 (@ENTRY,1,0, 'My machines are the future! They\'ll destroy you all!',14,0,100,0,0,5808, 'combat Say'),
 (@ENTRY,2,0, 'Explosions! MORE explosions! I\'ve got to have more explosions!',14,0,100,0,0,5809, 'combat Say'),
@@ -207,8 +207,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,4,0,30,3,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 6224;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'A foul trogg if ever I saw one.  Die!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'This sickness clouds my vision, but I know you must be a trogg.  Die foul invader!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'No gnome will be left behind.',12,0,50,0,0,0, 'combat Say'),
@@ -226,8 +226,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,4,0,30,3,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 6222;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'A foul trogg if ever I saw one.  Die!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,1, 'This sickness clouds my vision, but I know you must be a trogg.  Die foul invader!',12,0,50,0,0,0, 'combat Say'),
 (@ENTRY,0,2, 'No gnome will be left behind.',12,0,50,0,0,0, 'combat Say'),
@@ -247,8 +247,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,0,0,100,2,3000,3000,16000,17000,11,9775,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Irradiated');
 -- NPC talk text insert
 SET @ENTRY := 6329;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy'),
 (@ENTRY,1,0, '%s blood sprays into the air!',16,0,100,0,0,0, 'combat Emote');
 
@@ -296,8 +296,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,61,0,100,3,0,0,0,0,12,6233,1,600000,0,0,0,1,0,0,0,0,0,0,0,'Summon Mechanized Sentry');
 -- NPC talk text insert
 SET @ENTRY := 7849;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Warning! Warning! Intruder alert! Intruder alert!',14,0,100,0,0,5805, 'combat Say');
 
 -- Walking Bomb

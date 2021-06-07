@@ -69,8 +69,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,0,0,100,6,7000,10000,17000,18500,11,43356,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Pounce');
 -- NPC talk text insert
 SET @ENTRY := 24530;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Amani Lynx
@@ -128,8 +128,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,0,0,100,6,5000,7000,12000,14000,11,43673,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mighty Blow');
 -- NPC talk text insert
 SET @ENTRY := 24374;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Amani'shi Flame Caster
@@ -152,8 +152,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,0,0,100,6,3500,4500,12000,14000,11,43246,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Rend');
 -- NPC talk text insert
 SET @ENTRY := 23597;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Amani'shi Handler
@@ -215,8 +215,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,0,0,100,6,6000,7000,20000,24000,11,43205,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Multi-Shot');
 -- NPC talk text insert
 SET @ENTRY := 23586;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Invaders! Sound the Alarm!',14,0,100,0,0,12104, 'on Aggro Text');
 
 -- Amani'shi Tempest
@@ -257,8 +257,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,6,0,0,0,100,6,4000,5000,18000,20000,11,42496,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Furious Roar');
 -- NPC talk text insert
 SET @ENTRY := 23580;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Amani'shi Warrior
@@ -299,8 +299,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,0,0,50,6,9000,9000,25000,25000,11,98015,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Sigil of Frost');
 -- NPC talk text insert
 SET @ENTRY := 52962;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Ancients of Zandalar, mark\'dem for de black road.',14,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,1, 'Ancients of Zandalar, grant dis one da ability ta\'mock death itself!',14,0,50,0,0,0, 'on Aggro Text');
 
@@ -317,8 +317,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,5,0,0,0,100,6,8000,9000,15000,15000,11,23979,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Ancient Power');
 -- NPC talk text insert
 SET @ENTRY := 52958;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Ancients of Zandalar, mark\'dem for de black road.',14,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,1, 'Ancients of Zandalar, grant dis one da ability ta\'mock death itself!',14,0,50,0,0,0, 'on Aggro Text');
 
@@ -334,7 +334,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,4,0,0,0,100,7,5000,5000,0,0,11,97987,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Tectonic Plating');
 -- NPC talk text insert
 SET @ENTRY := 52956;
-DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
-INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0, 'Ancients of Zandalar, mark\'dem for de black road.',14,0,50,0,0,0, 'on Aggro Text'),
 (@ENTRY,0,1, 'Ancients of Zandalar, grant dis one da ability ta\'mock death itself!',14,0,50,0,0,0, 'on Aggro Text');
