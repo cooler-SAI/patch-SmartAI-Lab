@@ -267,7 +267,7 @@ SET @ENTRY := 37091;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,11,0,100,1,0,0,0,0,11,80807,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Resplendence on Spawn');
+(@ENTRY,0,0,0,11,0,100,1,0,0,0,0,11,82808,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Resplendence on Spawn');
 
 -- Deviate Terrortooth
 SET @ENTRY := 37090;
@@ -275,7 +275,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,4,0,100,1,0,0,0,0,11,6268,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Rushing Charge on Aggro'),
-(@ENTRY,0,1,0,0,0,100,0,4000,5000,15000,21000,11,80608,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Howling Screech');
+(@ENTRY,0,1,0,0,0,100,0,4000,5000,15000,21000,11,82608,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Howling Screech');
 
 -- Deviate Thornweaver
 SET @ENTRY := 38884;
@@ -440,7 +440,7 @@ SET @ENTRY := 37086;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,0,3000,4000,15000,16500,11,80797,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Leaping Bite');
+(@ENTRY,0,0,0,0,0,100,0,3000,4000,15000,16500,11,82797,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Leaping Bite');
 
 -- Heggin Stonewhisker <Bael'dun Chief Engineer>
 SET @ENTRY := 5847;
