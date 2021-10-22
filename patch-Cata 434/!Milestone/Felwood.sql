@@ -36,8 +36,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,9,0,100,0,0,5,22000,25000,11,84867,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sundering Swipe on Close');
 -- NPC talk text insert
 SET @ENTRY := 8956;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Angerclaw Mauler
@@ -50,8 +50,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,1,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 8958;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Arch Druid Navarax
@@ -80,8 +80,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,9,0,100,0,0,30,15000,18000,11,15117,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Chain Lightning on Close');
 -- NPC talk text insert
 SET @ENTRY := 9462;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Deadwood Avenger
@@ -94,8 +94,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,1,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 7157;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Deadwood Den Watcher
@@ -373,6 +373,14 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,1,0,1,0,100,1,3000,5000,0,0,11,11939,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Imp on Spawn'),
 (@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,8699,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Unholy Frenzy at 30% HP');
 
+-- Kroshius <Herald of the Legion's Fall>
+SET @ENTRY := 48344;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,25651,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Flame Buffet'),
+(@ENTRY,0,1,0,0,0,100,0,5000,8000,15000,22000,11,80182,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Uppercut');
+
 -- Lord Banehollow
 SET @ENTRY := 9516;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
@@ -394,8 +402,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,3,0,2,0,100,0,0,40,14000,21000,11,84868,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Hibernate at 40% HP');
 -- NPC talk text insert
 SET @ENTRY := 14344;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Moora
@@ -525,8 +533,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,1,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 9454;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Vorlus <The Voidwatcher>
@@ -553,8 +561,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,2,0,100,1,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 7149;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Winna Hazzard
@@ -567,8 +575,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,2,0,4,0,100,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text on Aggro');
 -- NPC talk text insert
 SET @ENTRY := 47679;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID`=@entry;
+INSERT INTO `creature_text` (`CreatureID`,`GroupID`,`ID`,`Text`,`Type`,`Language`,`Probability`,`Emote`,`Duration`,`Sound`,`comment`) VALUES 
 (@ENTRY,0,0, 'Kitty... KITTY! I\'M SO SORRY KITTY! COME BACK! DON\'T LEAVE ME LIKE THIS!',14,0,100,0,0,0, 'on Aggro Text');
 
 -- Whisperwind Lasher
