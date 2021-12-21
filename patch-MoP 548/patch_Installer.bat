@@ -25,7 +25,7 @@ echo .
 echo    ````````````$````````$
 echo    ````````````$````````$  *SmartAI Lab scripts*
 echo    $$$```$$$``$$$``$$$``$
-echo    $``$`````$``$``$```$`$$$$$    Mists of Pandaria 5.4.7 Version
+echo    $``$`````$``$``$```$`$$$$$    Mists of Pandaria 5.4.8 Version
 echo    $$$```$$$$``$``$`````$```$          for MoPDB original
 echo    $````$```$``$``$```$`$```$         
 echo    $`````$$$$``$$``$$$``$```$ 
