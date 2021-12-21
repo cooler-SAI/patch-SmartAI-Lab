@@ -514,9 +514,8 @@ SET @ENTRY := 86264;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,177576,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Toxin'),
-(@ENTRY,0,1,0,0,0,100,0,10000,10000,18000,20000,11,177575,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Noxious Sting'),
-(@ENTRY,0,2,0,4,0,100,1,0,0,0,0,11,177600,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wind Rush on Aggro');
+(@ENTRY,0,0,0,0,0,100,0,4000,5500,12000,18000,11,177575,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Noxious Sting'),
+(@ENTRY,0,1,0,4,0,100,1,0,0,0,0,11,177600,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wind Rush on Aggro');
 
 -- Everbloom Waterspeaker
 SET @ENTRY := 88261;
@@ -2104,6 +2103,14 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,154447,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Spider Bite');
+
+-- Venomous Ravager
+SET @ENTRY := 86263;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,12000,15000,11,177575,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Noxious Sting'),
+(@ENTRY,0,1,0,2,0,100,0,0,55,10000,12000,11,177591,2,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Ravage at 55% HP');
 
 -- Vicious Cave Basilisk
 SET @ENTRY := 86134;
